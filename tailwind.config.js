@@ -11,6 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'border-gradient' : 'linear-gradient(90deg, rgba(0,210,223,1) 0%, rgba(101,24,180,1) 100%)',
       },
       fontFamily:{
         sans: ['var(--font-inter)'] ,

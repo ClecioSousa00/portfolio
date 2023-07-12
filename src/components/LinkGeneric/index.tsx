@@ -8,12 +8,29 @@ type LinkGenericProps = {
 
 export const LinkGeneric=({target,children, ...rest}:LinkGenericProps)=>{
   return(
-    <Link 
-    className="flex items-center gap-4 border-2 px-8 py-3 text-sm md:text-base font-semibold rounded"
-    target={target}
-    {...rest}
-    >
-      {children}
-    </Link>
+    <div className="relative group">
+      <div className="absolute -inset-0.5 rounded-lg blur opacity-50 bg-border-gradient group-hover:opacity-100 transition-all"></div>
+      <Link
+      className="relative flex bg-primary rounded items-center gap-4  px-8 py-3 text-sm md:text-base font-semibold transition-all group-hover:text-secondaryLigth"
+      target={target}
+      {...rest}
+      >
+        {children}
+      </Link>
+    </div>
+
+
+
+
+
+    // <div className="p-1 bg-border-gradient rounded">
+    //   <Link
+    //   className="flex bg-primary items-center gap-4  px-8 py-3 text-sm md:text-base font-semibold "
+    //   target={target}
+    //   {...rest}
+    //   >
+    //     {children}
+    //   </Link>
+    // </div>
   )
 }

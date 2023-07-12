@@ -2,7 +2,6 @@
 import { Player } from '@lottiefiles/react-lottie-player';
 
 export const Logo=()=>{
-  
   return(
     <div className=''>
       <Player
