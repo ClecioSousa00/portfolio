@@ -1,10 +1,14 @@
+import { Container } from "../Container";
+import { Logo } from "../Logo";
 import { NavBar } from "../NavBar";
 
 export const Header=()=>{
   return(
-    <header className="relative px-6 pt-7 flex items-center justify-between md:px-20 md:pt-10">
-        <h1>Logo</h1>
+    <Container>
+      <header className="pt-4 flex items-center justify-between  md:border-b-[1px] md:border-opacity-20 md:border-secondary">
+        <Logo/>
         <NavBar/>
-    </header>
+      </header>
+    </Container>
   )
 }
