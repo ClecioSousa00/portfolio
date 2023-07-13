@@ -1,6 +1,7 @@
 import { AboutSection } from "../AboutSection"
 import { Container } from "../Container"
 import { Hero } from "../Hero"
+import { SkillsSection } from "../SkillsSection"
 
 export const Main =()=>{
   return(
@@ -8,6 +9,7 @@ export const Main =()=>{
       <main>
         <Hero/>
         <AboutSection/>
+        <SkillsSection/>
       </main>
    
   )
