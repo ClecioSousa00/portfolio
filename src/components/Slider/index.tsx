@@ -1,18 +1,19 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCards } from 'swiper/modules';
+import { EffectCards } from 'swiper/modules'
 
-import 'swiper/css';
-import 'swiper/css/effect-cards';
-import { CardSlider } from '../CardSlider';
-import { JsSvg } from '@/components/Icons/JsSvg';
-import { TypescriptSvg } from '@/components/Icons/TypescripSvg';
-import { HtmlSvg } from '@/components/Icons/HtmlSvg';
-import { CssSvg } from '@/components/Icons/CssSvg';
-import { ReactSvg } from '@/components/Icons/ReactSvg';
-import { NextSvg } from '@/components/Icons/NextSvg';
-import { StyledComponents } from '@/components/Icons/Styledcomponents';
-import { FirebaseSvg } from '@/components/Icons/FirebaseSvg';
+import { CardSlider } from '../CardSlider'
+import { JsSvg } from '@/components/Icons/JsSvg'
+import { TypescriptSvg } from '@/components/Icons/TypescripSvg'
+import { HtmlSvg } from '@/components/Icons/HtmlSvg'
+import { CssSvg } from '@/components/Icons/CssSvg'
+import { ReactSvg } from '@/components/Icons/ReactSvg'
+import { NextSvg } from '@/components/Icons/NextSvg'
+import {  StyledComponents } from '@/components/Icons/StyledComponents'
+import { FirebaseSvg } from '@/components/Icons/FirebaseSvg'
+
+import 'swiper/css'
+import 'swiper/css/effect-cards'
 
 export const Slider=()=>{
   const sliderData = [

@@ -1,6 +1,6 @@
-import { Container } from "../Container";
-import { Logo } from "../Logo";
-import { NavBar } from "../NavBar";
+import { Container } from "../Container"
+import { Logo } from "../Logo"
+import { NavBar } from "../NavBar"
 
 export const Header=()=>{
   return(
