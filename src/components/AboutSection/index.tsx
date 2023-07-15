@@ -12,11 +12,11 @@ export const AboutSection=()=>{
   return(
     <section className=" bg-primary py-10 md:py-20">
       <Container>
-        <div className="flex flex-col-reverse items-center gap-6 md:flex-row-reverse  md:justify-around">
+        <div className="flex flex-col-reverse items-center gap-6 md:flex-row-reverse md:justify-between lg:justify-around">
           <div className="">
             <h2 className="text-2xl font-semibold text-secondaryLigth mb-4 uppercase">Sobre Mim</h2>
             <p className="text-base font-medium text-secondaryLigth mb-2">Santa Terezinha, PE</p>
-            <p className="text-sm font-light leading-5 max-w-[450px] w-full">
+            <p className="text-sm font-light leading-5 md:max-w-[25rem] w-full lg:max-w-[28.125rem]" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Praesent id egestas dui. Nullam finibus aliquam enim quis faucibus. 
               Aenean ac commodo dolor, nec bibendum velit.
@@ -32,12 +32,12 @@ export const AboutSection=()=>{
                 <LuInstagram size={24} className="cursor-pointer hover:text-secondaryLigth"/>
               </Link>
             </div>
-            <LinkGeneric href={'#'}>
-              Enviar Mensagen 
+            {/* <LinkGeneric href={'mailto:cleciodev3@gmail.com'}>
+              Enviar email 
               <FaArrowRightLong/>
-            </LinkGeneric>
+            </LinkGeneric> */}
           </div>
-          <div className="relative w-64 h-64 rounded-full cursor-pointer  group md:w-80 md:h-80">
+          <div className="relative w-64 h-64 rounded-full cursor-pointer  group lg:w-80 lg:h-80">
             <div className="absolute -inset-0.5 rounded-full blur-md opacity-75 bg-border-gradient group-hover:opacity-100 transition-all"></div>
             <div className="relative rounded-full h-full w-full transition-all overflow-hidden bg-primary">
               <Image

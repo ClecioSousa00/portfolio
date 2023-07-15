@@ -6,7 +6,7 @@ type ContainerProps = {
 
 export const Container=({children}:ContainerProps)=>{
   return(
-    <div className="relative px-4 md:px-20">
+    <div className="relative px-4 md:px-10 lg:px-20">
       {children}
     </div>
   )

@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCards } from 'swiper/modules'
 
-import { CardSlider } from '../CardSlider'
+import { CardSlider } from './CardSlider'
 import { JsSvg } from '@/components/Icons/JsSvg'
 import { TypescriptSvg } from '@/components/Icons/TypescripSvg'
 import { HtmlSvg } from '@/components/Icons/HtmlSvg'
@@ -11,6 +11,7 @@ import { ReactSvg } from '@/components/Icons/ReactSvg'
 import { NextSvg } from '@/components/Icons/NextSvg'
 import {  StyledComponents } from '@/components/Icons/StyledComponents'
 import { FirebaseSvg } from '@/components/Icons/FirebaseSvg'
+import { TailwindSvg } from '@/components/Icons/TailwindSgv'
 
 import 'swiper/css'
 import 'swiper/css/effect-cards'
@@ -24,6 +25,7 @@ export const Slider=()=>{
     { name: 'React', icon: ReactSvg },
     { name: 'React Native', icon: ReactSvg },
     { name: 'Nextjs', icon: NextSvg },
+    { name: 'Tailwind', icon: TailwindSvg },
     { name: 'Styled-Components', icon: StyledComponents },
     { name: 'Firebase', icon: FirebaseSvg }
   ]

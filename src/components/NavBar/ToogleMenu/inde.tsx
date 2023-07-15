@@ -8,7 +8,6 @@ type ToogleMenuProps ={
 export const ToogleMenu=({menuIsOpen,...rest}:ToogleMenuProps)=>{
   return(
     <button {...rest}
-      // onClick={handleClickMenu}
       className=" flex cursor-pointer flex-col gap-1 z-10 md:hidden "
     >
       <span
@@ -23,6 +22,3 @@ export const ToogleMenu=({menuIsOpen,...rest}:ToogleMenuProps)=>{
     </button>
   )
 }
-// 'translate-y-[6px] -rotate-45 transform',
-// 'w-0 opacity-0',
-// '-translate-y-[5px]  rotate-45 transform',

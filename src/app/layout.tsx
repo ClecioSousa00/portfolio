@@ -1,10 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter,IBM_Plex_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'],weight:['300','400','500','600'],variable: '--font-inter' })
 
-const ibm = IBM_Plex_Mono({ subsets: ['latin'],weight:['400'],variable: '--font-ibm' })
 
 export const metadata: Metadata = {
   title: 'Portfólio',
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.variable} ${ibm.variable} font-sans bg-primaryDark text-secondary `}>
+      <body className={`${inter.variable} font-sans bg-primaryDark text-secondary `}>
         {children}
       </body>
     </html>
