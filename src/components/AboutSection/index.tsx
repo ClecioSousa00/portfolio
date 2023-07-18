@@ -10,7 +10,7 @@ import Link from "next/link"
 
 export const AboutSection=()=>{
   return(
-    <section className=" bg-primary py-10 md:py-20">
+    <section id="about" className=" bg-primary py-10 md:py-20">
       <Container>
         <div className="flex flex-col-reverse items-center gap-6 md:flex-row-reverse md:justify-between lg:justify-around">
           <div className="">

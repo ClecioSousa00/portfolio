@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6"
 
 export const ProjectSection=()=>{
   return(
-    <section className="py-10 lg:py-20">
+    <section id="project" className="py-10 lg:py-20">
       <Container>
         <h2 className="text-2xl font-semibold text-secondaryLigth mb-4 lg:mb-10 uppercase">Projetos</h2>
         <div className="flex flex-col flex-wrap items-center gap-y-10 lg:flex-row lg:justify-between">

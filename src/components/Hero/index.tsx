@@ -5,7 +5,7 @@ import { Container } from "../Container"
 
 export const Hero=()=>{
   return(
-    <section className="bg-primaryDark">
+    <section id="home" className="bg-primaryDark">
       <Container>
         <div className="grid lg:grid-cols-2 items-center h-[80vh]">
           <div className="mt-20 md:mt-0">
