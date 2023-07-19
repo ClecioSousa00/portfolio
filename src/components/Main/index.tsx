@@ -8,7 +8,7 @@ import { SkillsSection } from "../SkillsSection"
 export const Main =()=>{
   return(
    
-      <main>
+      <main id="home" className="lg:pt-24">
         <Hero/>
         <AboutSection/>
         <SkillsSection/>

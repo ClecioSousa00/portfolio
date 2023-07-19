@@ -21,11 +21,12 @@ module.exports = {
         secondary: '#C4C4C4',
         secondaryLigth: '#FFFFFF',
         blueLinear: '#00D2DF',
+        violetAlt: '#4118B4'
       },
       boxShadow:{
-        'blue-shadow': '0px 1px 100px 0px rgba(0,210,223,0.75)'
+        'blue-shadow': '0px 1px 30px 0px rgba(0,210,223,0.75)'
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }

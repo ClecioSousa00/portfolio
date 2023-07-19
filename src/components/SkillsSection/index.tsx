@@ -3,9 +3,9 @@ import { Slider } from "../Slider"
 
 export const SkillsSection=()=>{
   return(
-    <section id="skill" className="py-10 md:py-20">
+    <section id="skill" className=" py-10 md:py-28">
       <Container>
-        <h2 className="text-2xl font-semibold text-secondaryLigth mb-4 uppercase">Skills</h2>
+        <h2  className="text-2xl font-semibold text-secondaryLigth mb-4 uppercase">Skills</h2>
         <div className="h-full  flex flex-col justify-center items-center gap-4 md:flex-row overflow-hidden">
           <p className="max-w-[25rem] w-full mb-10"
           >

@@ -5,9 +5,9 @@ import { Container } from "../Container"
 
 export const Hero=()=>{
   return(
-    <section id="home" className="bg-primaryDark">
+    <section className="bg-primaryDark">
       <Container>
-        <div className="grid lg:grid-cols-2 items-center h-[80vh]">
+        <div className="grid lg:grid-cols-2 items-center h-[60vh] lg:h-[80vh]">
           <div className="mt-20 md:mt-0">
             <p className="text-base text-secondary uppercase md:text-xl">Olá, eu sou</p>
             <h1 className="text-3xl text-secondaryLigth my-2 font-medium uppercase md:text-6xl md:my-3">Clécio Sousa</h1>

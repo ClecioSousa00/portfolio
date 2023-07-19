@@ -32,7 +32,7 @@ export const Slider=()=>{
 
   return(
     <>
-      <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="">
+      <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
         {sliderData.map((item, index) => (
           <SwiperSlide key={index}>
             <CardSlider name={item.name} icon={item.icon} />
