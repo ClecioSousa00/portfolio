@@ -1,9 +1,9 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image'
 
-export type dataProjectProps={
+export type dataProjectProps = {
   img: StaticImageData
-  name:string
-  description:string
-  linkGithub:string
-  linkProject:string
+  name: string
+  description: string
+  linkGithub: string
+  linkProject: string
 }

@@ -1,26 +1,26 @@
 'use client'
-import { Container } from "../Container"
-import { Slider } from "../Slider"
-import { motion } from "framer-motion"
-export const SkillsSection=()=>{
-  return(
+import { Container } from '../Container'
+import { Slider } from '../Slider'
+import { motion } from 'framer-motion'
+export const SkillsSection = () => {
+  return (
     <section id="skill" className=" py-10 md:py-28">
       <Container>
-        <h2  className="text-2xl font-semibold text-secondaryLigth mb-4 uppercase">Skills</h2>
-        <motion.div className="h-full  flex flex-col justify-center items-center gap-4 md:flex-row overflow-hidden"
-           initial={{opacity:0, y:100}}
-           whileInView={{opacity:1, y:0}}
-           exit={{opacity:0, y:100}}
-           transition={{duration:0.5}}
+        <h2 className="mb-4 text-2xl font-semibold uppercase text-secondaryLigth">
+          Skills
+        </h2>
+        <motion.div
+          className="flex  h-full flex-col items-center justify-center gap-4 overflow-hidden md:flex-row md:justify-around"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 100 }}
+          transition={{ duration: 0.5 }}
         >
-          <p className="max-w-[25rem] w-full mb-10">
-            Estou dedicando meu tempo para estudar novas tecnologias e também aprofundando meu conhecimento nas que já domino.
+          <p className="mb-10 w-full max-w-[25rem] text-justify tracking-wide">
+            Estou dedicando meu tempo para estudar novas tecnologias e também
+            aprofundando meu conhecimento nas que já domino.
           </p>
-          {/* <div className=" relative h-[25rem] w-[12.5rem] md:w-[15.625rem]">
-            <div className="absolute w-48 h-48 bottom-16 md:w-64 md:h-64 rounded-full md:bottom-4  bg-radial-gradient"></div>
-           
-          </div> */}
-           <Slider/>
+          <Slider />
         </motion.div>
       </Container>
     </section>
