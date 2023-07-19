@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { CardProject } from "./CardProject"
 import { Container } from "../Container"
 import { dataProjectProps } from "@/types/projectType"
@@ -28,14 +27,7 @@ const dataProjects:dataProjectProps[] = [
     description: "SpaceTime é uma plataforma de cápsula do tempo onde você pode fazer seu cadastro usando sua conta no Github e com isso você pode armazenar suas memórias, colocando uma foto, descrição e data. Este projeto foi desenvolvido no evento NlW Spacetime pela Rocketseat.",
     linkGithub: "https://github.com/ClecioSousa00/spacetime-rocketseat",
     linkProject: ""
-  },
-  // {
-  //   img:bannerBlizzard,
-  //   name: "Blizzard",
-  //   description: "Este projeto é uma landing page da Blizzard, que é um desafio do Br Challenges",
-  //   linkGithub: "https://github.com/ClecioSousa00/br-challenges-blizzard",
-  //   linkProject: "https://br-challenges-blizzard-tau.vercel.app/"
-  // },
+  }
 ]
 
 export const ProjectSection=()=>{
@@ -44,20 +36,18 @@ export const ProjectSection=()=>{
       <Container>
         <h2 className="text-2xl font-semibold text-secondaryLigth mb-4 lg:mb-10 uppercase">Projetos</h2>
         <div className="flex flex-col flex-wrap items-center gap-y-10 lg:flex-row lg:justify-between">
-          {dataProjects.map((project,index) => <CardProject key={index} data={project}/>)}
+          {dataProjects.map((project,index) => (
+            <CardProject key={index} data={project}
+              initial={{opacity:0, y:100}}
+              whileInView={{opacity:1, y:0}}
+              exit={{opacity:0, y:100}}
+              transition={{duration:0.7, delay: index * 0.1}}
+            />
+          ))}
         </div>
-        
-          {/* <Link 
-            className=" text-sm font-medium w-24 flex items-center gap-2 mt-10 hover:text-secondaryLigth cursor-pointer"
-            href={'https://github.com/ClecioSousa00'} 
-            target="_blank"
-          >
-              Ver mais
-            <FaArrowRightLong/>
-          </Link> */}
-        
       </Container>
     </section>
   )
 }
+
 

@@ -1,17 +1,20 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
 import { LuGithub,LuLink } from "react-icons/lu"
+import { motion } from "framer-motion"
 
 import { LinkGeneric } from "@/components/LinkGeneric"
 import { dataProjectProps } from "@/types/projectType"
+import { ComponentProps } from "react"
 
 type CardProjectProps={
   data: dataProjectProps
-}
+} & ComponentProps<typeof motion.div>
 
-export const CardProject=({data}: CardProjectProps)=>{
+export const CardProject=({data,...rest}: CardProjectProps)=>{
   return(
-    <div className="w-full md:w-[31.25rem] ">
+    <motion.div className="w-full md:w-[31.25rem] " {...rest}>
       <div className="h-[12.5rem] md:h-[15.625rem] rounded overflow-hidden opacity-50 transition-all duration-300 hover:opacity-95 hover:shadow-blue-shadow">
         <Image className="w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer object-top" 
           src={data.img} 
@@ -34,7 +37,7 @@ export const CardProject=({data}: CardProjectProps)=>{
         <LuLink/>
         {data.linkProject ? 'Visualizar' : 'Indisponível'}
       </LinkGeneric>
-    </div>
+    </motion.div>
   )
 }
 

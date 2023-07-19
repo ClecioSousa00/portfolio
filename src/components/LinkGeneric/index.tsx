@@ -6,6 +6,8 @@ type LinkGenericProps = {
   target?: string
 } & LinkProps
 
+
+
 export const LinkGeneric=({target,children, ...rest}:LinkGenericProps)=>{
   return(
     <div className="relative  md:w-44 group">
