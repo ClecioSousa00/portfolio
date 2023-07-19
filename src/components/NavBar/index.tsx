@@ -5,7 +5,7 @@ import {ToogleMenu} from '@/components/NavBar/ToogleMenu'
 
 const links =[
   {
-    href: '#home',
+    href: '#',
     name: 'Home',
   },
   {
