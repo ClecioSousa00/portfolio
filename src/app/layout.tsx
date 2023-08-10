@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className="scroll-smooth scrollbar-thin scrollbar-track-secondary scrollbar-thumb-violetAlt"
+      className="scroll-smooth scrollbar-thin  scrollbar-thumb-secondary"
     >
       <body
         className={`${inter.variable} bg-primaryDark font-sans text-secondary`}

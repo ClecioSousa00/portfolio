@@ -38,10 +38,11 @@ export const CardProject = ({ data, ...rest }: CardProjectProps) => {
         </Link>
         <LuGithub size={24} />
       </div>
-      <LinkGeneric href={data.linkProject} target="_blank">
-        <LuLink />
-        {data.linkProject ? 'Visualizar' : 'Indisponível'}
-      </LinkGeneric>
+      {data.linkProject && (
+        <LinkGeneric href={data.linkProject}>
+          <LuLink />
+        </LinkGeneric>
+      )}
     </motion.div>
   )
 }

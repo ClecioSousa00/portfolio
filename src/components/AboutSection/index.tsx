@@ -1,12 +1,38 @@
 'use client'
-import { Container } from '../Container'
 import { motion } from 'framer-motion'
-
+import Link from 'next/link'
 import Image from 'next/image'
 
+import { Container } from '../Container'
+import { CopyButton } from '../CopyButton'
 import { LuLinkedin, LuGithub, LuInstagram } from 'react-icons/lu'
+
 import photo from '@/assets/photo.png'
-import Link from 'next/link'
+
+const links = [
+  {
+    href: 'https://www.linkedin.com/in/clécio-sousa',
+    icon: <LuLinkedin size={24} />,
+  },
+  {
+    href: 'https://github.com/ClecioSousa00',
+    icon: <LuGithub size={24} />,
+  },
+  {
+    href: 'https://instagram.com/clecio_sousa_?igshid=NGExMmI2YTkyZg==',
+    icon: <LuInstagram size={24} />,
+  },
+]
+
+const generateLinks = () => {
+  return links.map((link, index) => (
+    <Link key={index} href={link.href} target="_blank">
+      <span className="cursor-pointer hover:text-secondaryLigth">
+        {link.icon}
+      </span>
+    </Link>
+  ))
+}
 
 export const AboutSection = () => {
   return (
@@ -34,32 +60,11 @@ export const AboutSection = () => {
               prática os conhecimentos adquiridos.
             </p>
             <div className="my-8 flex items-center gap-4">
-              <Link
-                href={'https://www.linkedin.com/in/clécio-sousa'}
-                target="_blank"
-              >
-                <LuLinkedin
-                  size={24}
-                  className="cursor-pointer hover:text-secondaryLigth"
-                />
-              </Link>
-              <Link href={'https://github.com/ClecioSousa00'} target="_blank">
-                <LuGithub
-                  size={24}
-                  className="cursor-pointer hover:text-secondaryLigth"
-                />
-              </Link>
-              <Link
-                href={
-                  'https://instagram.com/clecio_sousa_?igshid=NGExMmI2YTkyZg=='
-                }
-                target="_blank"
-              >
-                <LuInstagram
-                  size={24}
-                  className="cursor-pointer hover:text-secondaryLigth"
-                />
-              </Link>
+              {generateLinks()}
+            </div>
+            <div className="flex items-center gap-3">
+              <span>clecio.dev3@gmail.com</span>
+              <CopyButton />
             </div>
           </motion.div>
           <motion.div
