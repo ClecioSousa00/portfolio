@@ -42,7 +42,6 @@ export const AboutSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.5 }}
           >
             <h2 className="mb-4 text-2xl font-semibold uppercase text-secondaryLigth">
@@ -71,7 +70,6 @@ export const AboutSection = () => {
             className="group relative h-64 w-64 origin-center  cursor-pointer rounded-full lg:h-80 lg:w-80"
             initial={{ opacity: 0, y: 200, scale: 0.5 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 200, scale: 0.5 }}
             transition={{ duration: 0.5 }}
           >
             <div className="absolute -inset-0.5 rounded-full bg-border-gradient opacity-75 blur-md transition-all group-hover:opacity-100"></div>

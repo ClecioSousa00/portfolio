@@ -13,8 +13,7 @@ export const Hero = () => {
           <motion.div
             className="mt-20 md:mt-0"
             initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
             <p className="text-base uppercase text-secondary md:text-xl">
@@ -27,17 +26,11 @@ export const Hero = () => {
               Desenvolvedor front-end
             </p>
             <div className="mt-16 flex gap-3">
-              <LinkGeneric
-                href={'https://www.linkedin.com/in/clécio-sousa'}
-                target="_blank"
-              >
+              <LinkGeneric href={'https://www.linkedin.com/in/clécio-sousa'}>
                 <LuLinkedin size={22} />
                 Linkedin
               </LinkGeneric>
-              <LinkGeneric
-                href={'https://github.com/ClecioSousa00'}
-                target="_blank"
-              >
+              <LinkGeneric href={'https://github.com/ClecioSousa00'}>
                 <LuGithub size={22} />
                 Github
               </LinkGeneric>

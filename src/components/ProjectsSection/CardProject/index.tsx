@@ -41,6 +41,7 @@ export const CardProject = ({ data, ...rest }: CardProjectProps) => {
       {data.linkProject && (
         <LinkGeneric href={data.linkProject}>
           <LuLink />
+          Visualizar
         </LinkGeneric>
       )}
     </motion.div>

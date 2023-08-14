@@ -16,7 +16,6 @@ export const LinkGeneric = ({ children, ...rest }: LinkGenericProps) => {
         {...rest}
       >
         {children}
-        Visualizar
       </Link>
     </div>
   )

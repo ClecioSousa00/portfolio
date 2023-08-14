@@ -3,8 +3,18 @@ import bannerBlizzard from '@/assets/banner-blizzard 1.png'
 import bannerSpacetime from '@/assets/bannerSpacetime.png'
 import bannerPaqueta from '@/assets/bannerPaqueta.png'
 import bannerRickAndMorty from '@/assets/banner-rickAndMorty.png'
+import bannerFortnite from '@/assets/bannerFortnite.png'
+import bannerMova from '@/assets/bannerMova.png'
 
 export const dataProjects: dataProjectProps[] = [
+  {
+    img: bannerMova,
+    name: 'Mova',
+    description:
+      'Mova é um aplicativo de filmes que utiliza a api do TMDB para obter os dados. Nele o usuário pode criar conta, fazer login, buscar filmes, adicionar filmes aos favoritos. Este app foi desenvolvido com o propósito de estudar mais sobre react native',
+    linkGithub: 'https://github.com/ClecioSousa00/appMova',
+    linkProject: '',
+  },
   {
     img: bannerBlizzard,
     name: 'Blizzard',
@@ -20,6 +30,14 @@ export const dataProjects: dataProjectProps[] = [
       'Este projeto é uma plataforma do universo de "Rick and Morty". Com funcionalidades de paginação de personagens busca e opção de adicionar ao favoritos.',
     linkGithub: 'https://github.com/ClecioSousa00/rick-and-morty',
     linkProject: 'https://rick-and-morty-42r2bwumj-cleciosousa00.vercel.app/',
+  },
+  {
+    img: bannerFortnite,
+    name: 'Fortnite Slider',
+    description:
+      'Este Projeto é um Slider de personagens do Fortnite. Para este projeto foi usado React, Nextjs, Typescript, Swiper, Tailwind.',
+    linkGithub: 'https://github.com/ClecioSousa00/fortnite-slider',
+    linkProject: 'https://fortnite-slider-haa3motml-cleciosousa00.vercel.app//',
   },
   {
     img: bannerPaqueta,
