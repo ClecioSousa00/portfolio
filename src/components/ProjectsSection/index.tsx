@@ -9,7 +9,7 @@ export const ProjectSection = () => {
         <h2 className="mb-4 text-2xl font-semibold uppercase text-secondaryLigth lg:mb-10">
           Projetos
         </h2>
-        <div className="flex flex-col flex-wrap items-center gap-y-10 lg:flex-row lg:justify-between">
+        <div className="flex flex-col flex-wrap items-center gap-y-10 lg:flex-row lg:items-start lg:justify-between">
           {dataProjects.map((project, index) => (
             <CardProject
               key={index}

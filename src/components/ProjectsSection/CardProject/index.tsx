@@ -14,7 +14,7 @@ type CardProjectProps = {
 
 export const CardProject = ({ data, ...rest }: CardProjectProps) => {
   return (
-    <motion.div className="w-full md:w-[31.25rem] " {...rest}>
+    <motion.div className="w-full md:w-[31.25rem]" {...rest}>
       <div className="h-[12.5rem] overflow-hidden rounded opacity-50 transition-all duration-300 hover:opacity-95 hover:shadow-blue-shadow md:h-[15.625rem]">
         <Image
           className="h-full w-full cursor-pointer object-cover object-top transition-all duration-500 hover:scale-105"
