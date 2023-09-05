@@ -12,15 +12,15 @@ import photo from '@/assets/photo.png'
 const links = [
   {
     href: 'https://www.linkedin.com/in/clécio-sousa',
-    icon: <LuLinkedin size={24} />,
+    icon: <LuLinkedin size={24} title="Linkedin" />,
   },
   {
     href: 'https://github.com/ClecioSousa00',
-    icon: <LuGithub size={24} />,
+    icon: <LuGithub size={24} title="Github" />,
   },
   {
     href: 'https://instagram.com/clecio_sousa_?igshid=NGExMmI2YTkyZg==',
-    icon: <LuInstagram size={24} />,
+    icon: <LuInstagram size={24} title="Instagram" />,
   },
 ]
 
@@ -40,8 +40,8 @@ export const AboutSection = () => {
       <Container>
         <div className="flex  flex-col-reverse items-center gap-6 md:flex-row-reverse md:justify-between lg:justify-around">
           <motion.div
-            initial={{ opacity: 0, x: 200 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <h2 className="mb-4 text-2xl font-semibold uppercase text-secondaryLigth">
@@ -55,8 +55,7 @@ export const AboutSection = () => {
               UEPB Câmpus VII(Patos). Meu objetivo principal é ingressar no
               mercado de trabalho como desenvolvedor Front-End, área que
               despertou meu grande interesse durante meus estudos. Estou em
-              busca de oportunidades de estágio ou emprego para colocar em
-              prática os conhecimentos adquiridos.
+              busca de oportunidades de estágio ou emprego..
             </p>
             <div className="my-8 flex items-center gap-4">
               {generateLinks()}

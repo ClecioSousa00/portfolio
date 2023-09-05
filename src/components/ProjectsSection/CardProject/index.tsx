@@ -17,7 +17,7 @@ export const CardProject = ({ data, ...rest }: CardProjectProps) => {
     <motion.div className="w-full md:w-[31.25rem]" {...rest}>
       <div className="h-[12.5rem] overflow-hidden rounded opacity-50 transition-all duration-300 hover:opacity-95 hover:shadow-blue-shadow md:h-[15.625rem]">
         <Image
-          className="h-full w-full cursor-pointer object-cover object-top transition-all duration-500 hover:scale-105"
+          className="h-full w-full  object-cover object-top transition-all duration-500 hover:scale-105"
           src={data.img}
           alt=""
         />
@@ -36,7 +36,7 @@ export const CardProject = ({ data, ...rest }: CardProjectProps) => {
         >
           Acessar Github
         </Link>
-        <LuGithub size={24} />
+        <LuGithub size={24} title="Github" />
       </div>
       {data.linkProject && (
         <LinkGeneric href={data.linkProject}>

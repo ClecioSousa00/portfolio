@@ -5,7 +5,7 @@ export const CopyButton = () => {
     <button
       onClick={() => navigator.clipboard.writeText('clecio.dev3@gmail.com')}
     >
-      <IconCopy />
+      <IconCopy title="Clique aqui para copiar" />
     </button>
   )
 }

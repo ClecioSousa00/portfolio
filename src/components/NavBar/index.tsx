@@ -16,10 +16,7 @@ const links = [
     href: '#skill',
     name: 'Skills',
   },
-  {
-    href: '#experience',
-    name: 'Experiências',
-  },
+
   {
     href: '#project',
     name: 'Projetos',
@@ -42,9 +39,9 @@ export const NavBar = () => {
             <li
               key={index}
               onClick={() => setMenuIsOpen(false)}
-              className="ml-6 mt-4 w-fit rounded px-3 py-1  transition-all group-hover:opacity-50 hover:bg-secondary hover:text-secondaryLigth hover:!opacity-100 md:ml-0 md:mt-0"
+              className="ml-6 mt-4 w-fit cursor-pointer rounded px-3 py-1  transition-all group-hover:opacity-50 hover:bg-secondary hover:text-primary hover:!opacity-100 md:ml-0 md:mt-0"
             >
-              <Link className="text-lg md:text-base " href={link.href}>
+              <Link className="text-lg  md:text-base" href={link.href}>
                 {link.name}
               </Link>
             </li>

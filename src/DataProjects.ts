@@ -16,20 +16,20 @@ export const dataProjects: dataProjectProps[] = [
     linkProject: '',
   },
   {
-    img: bannerBlizzard,
-    name: 'Blizzard',
-    description:
-      'Desafio do Br Challenges: Criar uma landing page da Blizzard. Neste projeto temos que seguir o layout disponível e fazer o mais próximo possível, também foi disponibilizado uma api para pegar os dados dos jogos.',
-    linkGithub: 'https://github.com/ClecioSousa00/br-challenges-blizzard',
-    linkProject: 'https://br-challenges-blizzard-tau.vercel.app/',
-  },
-  {
     img: bannerRickAndMorty,
     name: 'Rick and Morty',
     description:
       'Este projeto é uma plataforma do universo de "Rick and Morty". Com funcionalidades de paginação de personagens busca e opção de adicionar ao favoritos.',
     linkGithub: 'https://github.com/ClecioSousa00/rick-and-morty',
     linkProject: 'https://rick-and-morty-42r2bwumj-cleciosousa00.vercel.app/',
+  },
+  {
+    img: bannerBlizzard,
+    name: 'Blizzard',
+    description:
+      'Desafio do Br Challenges: Criar uma landing page da Blizzard. Neste projeto temos que seguir o layout disponível e fazer o mais próximo possível, também foi disponibilizado uma api para pegar os dados dos jogos.',
+    linkGithub: 'https://github.com/ClecioSousa00/br-challenges-blizzard',
+    linkProject: 'https://br-challenges-blizzard-tau.vercel.app/',
   },
   {
     img: bannerFortnite,
@@ -48,12 +48,12 @@ export const dataProjects: dataProjectProps[] = [
       'https://github.com/ClecioSousa00/br-challenges-paqueta-calcados',
     linkProject: 'https://br-challenges-paqueta-calcados-one.vercel.app/',
   },
-  {
-    img: bannerSpacetime,
-    name: 'SpaceTime',
-    description:
-      'SpaceTime é uma plataforma de cápsula do tempo onde você pode fazer seu cadastro usando sua conta no Github e com isso você pode armazenar suas memórias, colocando uma foto, descrição e data. Este projeto foi desenvolvido no evento NlW Spacetime pela Rocketseat.',
-    linkGithub: 'https://github.com/ClecioSousa00/spacetime-rocketseat',
-    linkProject: '',
-  },
+  // {
+  //   img: bannerSpacetime,
+  //   name: 'SpaceTime',
+  //   description:
+  //     'SpaceTime é uma plataforma de cápsula do tempo onde você pode fazer seu cadastro usando sua conta no Github e com isso você pode armazenar suas memórias, colocando uma foto, descrição e data. Este projeto foi desenvolvido no evento NlW Spacetime pela Rocketseat.',
+  //   linkGithub: 'https://github.com/ClecioSousa00/spacetime-rocketseat',
+  //   linkProject: '',
+  // },
 ]

@@ -10,7 +10,6 @@ import { CssSvg } from '@/components/Icons/CssSvg'
 import { ReactSvg } from '@/components/Icons/ReactSvg'
 import { NextSvg } from '@/components/Icons/NextSvg'
 import { StyledComponents } from '@/components/Icons/StyledComponents'
-import { FirebaseSvg } from '@/components/Icons/FirebaseSvg'
 import { TailwindSvg } from '@/components/Icons/TailwindSgv'
 import { MoreSvg } from '@/components/Icons/MoreSvg'
 
@@ -28,7 +27,7 @@ export const Slider = () => {
     { name: 'Nextjs', icon: NextSvg },
     { name: 'Tailwind', icon: TailwindSvg },
     { name: 'Styled-Components', icon: StyledComponents },
-    { name: 'Firebase', icon: FirebaseSvg },
+
     { name: 'Em breve mais', icon: MoreSvg },
   ]
 

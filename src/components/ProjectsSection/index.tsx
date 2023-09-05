@@ -4,7 +4,7 @@ import { dataProjects } from '@/DataProjects'
 
 export const ProjectSection = () => {
   return (
-    <section id="project" className="py-10 md:py-28">
+    <section id="project" className="bg-primary py-10 md:py-28">
       <Container>
         <h2 className="mb-4 text-2xl font-semibold uppercase text-secondaryLigth lg:mb-10">
           Projetos

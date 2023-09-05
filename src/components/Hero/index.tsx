@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <section className="bg-primaryDark">
       <Container>
-        <div className="grid h-[60vh] items-center lg:h-[80vh] lg:grid-cols-2 ">
+        <div className="grid h-[60vh] items-center  lg:h-full lg:grid-cols-2 ">
           <motion.div
             className="mt-20 md:mt-0"
             initial={{ opacity: 0, x: -100 }}

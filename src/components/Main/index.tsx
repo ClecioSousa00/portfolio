@@ -10,7 +10,7 @@ export const Main = () => {
       <Hero />
       <AboutSection />
       <SkillsSection />
-      <ExperienceSection />
+      {/* <ExperienceSection /> */}
       <ProjectSection />
     </main>
   )
