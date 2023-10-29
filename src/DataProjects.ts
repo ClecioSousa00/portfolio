@@ -1,10 +1,10 @@
 import { dataProjectProps } from './types/projectType'
 import bannerBlizzard from '@/assets/banner-blizzard 1.png'
-import bannerSpacetime from '@/assets/bannerSpacetime.png'
 import bannerPaqueta from '@/assets/bannerPaqueta.png'
 import bannerRickAndMorty from '@/assets/banner-rickAndMorty.png'
 import bannerFortnite from '@/assets/bannerFortnite.png'
 import bannerMova from '@/assets/bannerMova.png'
+import bannerCoffeeDelivery from '@/assets/Cover.png'
 
 export const dataProjects: dataProjectProps[] = [
   {
@@ -13,6 +13,14 @@ export const dataProjects: dataProjectProps[] = [
     description:
       'Mova é um aplicativo de filmes que utiliza a api do TMDB para obter os dados. Nele o usuário pode criar conta, fazer login, buscar filmes, adicionar filmes aos favoritos. Este app foi desenvolvido com o propósito de estudar mais sobre react native',
     linkGithub: 'https://github.com/ClecioSousa00/appMova',
+    linkProject: '',
+  },
+  {
+    img: bannerCoffeeDelivery,
+    name: 'Coffee Delivery',
+    description:
+      'Este Projeto é um desafio que pode ser encontrado no Figma da rocketseat. O Coffee Delivery é uma aplicação móvel que permite aos usuários pedirem café para entrega. Além disso eu criei outra tela para o usuário fornecer um endereço de entrega.',
+    linkGithub: 'https://github.com/ClecioSousa00/coffe-delivery',
     linkProject: '',
   },
   {
@@ -48,12 +56,4 @@ export const dataProjects: dataProjectProps[] = [
       'https://github.com/ClecioSousa00/br-challenges-paqueta-calcados',
     linkProject: 'https://br-challenges-paqueta-calcados-one.vercel.app/',
   },
-  // {
-  //   img: bannerSpacetime,
-  //   name: 'SpaceTime',
-  //   description:
-  //     'SpaceTime é uma plataforma de cápsula do tempo onde você pode fazer seu cadastro usando sua conta no Github e com isso você pode armazenar suas memórias, colocando uma foto, descrição e data. Este projeto foi desenvolvido no evento NlW Spacetime pela Rocketseat.',
-  //   linkGithub: 'https://github.com/ClecioSousa00/spacetime-rocketseat',
-  //   linkProject: '',
-  // },
 ]
