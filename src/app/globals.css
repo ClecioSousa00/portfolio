@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* scrollbar-thin  scrollbar-thumb-secondary */
-
-
-
 
 ::-webkit-scrollbar{
   width: .5rem;
