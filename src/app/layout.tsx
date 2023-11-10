@@ -20,10 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="pt-BR"
-      className="scroll-smooth scrollbar-thin  scrollbar-thumb-secondary"
-    >
+    <html lang="pt-BR" className="scroll-smooth ">
       <body
         className={`${inter.variable} bg-primaryDark font-sans text-secondary`}
       >
