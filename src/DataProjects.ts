@@ -1,12 +1,20 @@
 import { dataProjectProps } from './types/projectType'
 import bannerBlizzard from '@/assets/banner-blizzard 1.png'
-import bannerPaqueta from '@/assets/bannerPaqueta.png'
 import bannerRickAndMorty from '@/assets/banner-rickAndMorty.png'
 import bannerFortnite from '@/assets/bannerFortnite.png'
 import bannerMova from '@/assets/bannerMova.png'
 import bannerCoffeeDelivery from '@/assets/Cover.png'
+import bannerFsw from '@/assets/bannerFSW.png'
 
 export const dataProjects: dataProjectProps[] = [
+  {
+    img: bannerFsw,
+    name: 'FSW Store',
+    description:
+      'Este projeto é um E-Commerce em "desenvolvimento" para fins de estudos, em que foi trabalhado com React, Next js, Next Auth, Prisma, Stripe, Shadcnui e ouras techs ',
+    linkGithub: 'https://github.com/ClecioSousa00/ecommerce',
+    linkProject: 'https://ecommerce-git-main-cleciosousa00.vercel.app/',
+  },
   {
     img: bannerMova,
     name: 'Mova',
@@ -46,14 +54,5 @@ export const dataProjects: dataProjectProps[] = [
       'Este Projeto é um Slider de personagens do Fortnite. Para este projeto foi usado React, Nextjs, Typescript, Swiper, Tailwind.',
     linkGithub: 'https://github.com/ClecioSousa00/fortnite-slider',
     linkProject: 'https://fortnite-slider-haa3motml-cleciosousa00.vercel.app//',
-  },
-  {
-    img: bannerPaqueta,
-    name: 'Paquetá Calçados',
-    description:
-      'Desafio do Br Challenges: Desenvolver um e-commerce de calçados. Neste projeto o foco foi consumir a Api de calçados disponibilizada pelo desafio e implementar um fluxo de adicionar os produtos na sacola e seguir o layout disponível.',
-    linkGithub:
-      'https://github.com/ClecioSousa00/br-challenges-paqueta-calcados',
-    linkProject: 'https://br-challenges-paqueta-calcados-one.vercel.app/',
   },
 ]
